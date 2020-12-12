@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                   CropImage.activity().start(MainActivity.this);
-             //   fromRemoteModel();
+                //fromRemoteModel();
             }
         });
     }
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     imageView.setImageURI(uri); //set image in imageview
                     textView.setText(""); //so that previous text don't get append with new one
                       setLabelerFromLocalModel(uri);
-                   // setLabelerFromRemoteLabel(uri);
+                    //setLabelerFromRemoteLabel(uri);
                 } else
                     progressDialog.cancel();
             } else

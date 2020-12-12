@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpAndSupport">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="FOR ANY HELP AND SUPPORT PLEASE CONTACT:-"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aman Mishra - 9636730565"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divanti Neogi - 9668055266"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abhishek kumar - 8235561579"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"/>
+
+
+</LinearLayout>

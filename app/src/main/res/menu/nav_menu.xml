@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/android"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Android" />
+        <item
+            android:id="@+id/mlkit"
+            android:icon="@drawable/ic_mlkit"
+            android:title="Firebase MLkit" />
+
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_cycle"-->
+        <!--            android:icon="@drawable/caricon"-->
+        <!--            android:title="Policies" />-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_bus"-->
+        <!--            android:icon="@drawable/caricon"-->
+        <!--            android:title="Help And Support" />-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_plane"-->
+        <!--            android:icon="@drawable/caricon"-->
+        <!--            android:title="Plane" />-->
+
+    </group>
+    <item android:title="About">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+
+                    android:id="@+id/nav_policy"
+                    android:icon="@drawable/ic_policies"
+                    android:title="Policies" />
+
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_help"
+                    android:title="Help And Support" />
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

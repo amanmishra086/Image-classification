@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".FirstActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        app:headerLayout="@layout/navheader"
+        app:menu="@menu/nav_menu"
+        app:navigationIcon="@drawable/navicon2"/>
+
+<!--    tools:openDrawer="start"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3D3D3D"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/navicon2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Image classification"
+                    android:textSize="25dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"/>
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:src="@drawable/navicon2"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="3dp"-->
+<!--                    android:src="@drawable/aiicon" />-->
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:onClick="OnClickFlower"
+            android:padding="10dp"
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/flower"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/imageView"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:background="#14000000"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/flower"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#E21616"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flower species Classification"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="OnClickText"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:id="@+id/text_img"
+                    android:scaleType="fitCenter" />
+
+                <LinearLayout
+                    android:background="#14000000"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:textColor="#E21616"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Text Recognition "/>
+                </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:onClick="OnClickLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/landmark2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:background="#14000000"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:textColor="#E21616"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Landmark Classification "/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:onClick="OnClickFace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/facerecognition"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:background="#14000000"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:textColor="#E21616"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Face Recognition "/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
